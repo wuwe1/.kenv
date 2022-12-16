@@ -1,5 +1,5 @@
 // Name: Browser Bookmarks & History
-// Description: Open a URL from brower's history and bookmarks
+// Description: Open a URL from browser's history and bookmarks
 // Author: wuwe1
 // Twitter: @wuwe19
 
