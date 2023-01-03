@@ -5,11 +5,12 @@
 
 import "@johnlindquist/kit"
 
-const input = await arg("Word or Text")
+let input = await arg("Word or Text")
 await say(input, {
   rate: 1.1,
   name: "siri"
 })
+input = input.split(" ").join("+")
 
 const result = JSON.parse(await $`curl -fsSL 'https://dict.youdao.com/suggest?num=5&ver=3.0&doctype=json&cache=false&le=en&q=${input}'`)
 const entries = result?.data?.entries
